@@ -1,0 +1,110 @@
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+fieldset{
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+}
+legend{
+    font-weight: bold;
+    padding: 0 5px;
+
+}
+.motivo legend{
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    padding: 0 5px;
+    font-weight: bold;
+
+}
+.motivo label{
+    display: block;
+    margin-bottom: 1px;
+    font-weight: bold;
+    margin-top: 5px;
+    font-size: 14px;
+
+}
+input[type="text"], input[type="email"], input[type="tel"], input[type="cpf"], input[type="Sobrename"], input[type="nascimento"], select, textarea{
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 5px;
+    font-size: 14px;
+}
+input[type="submit"]{
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+input[type="submit"]:hover{
+    background-color: #218838;
+}
+textarea{
+    resize: vertical;
+    min-height: 100px;
+    font-size: 14px;
+}
+select{
+    font-size: 14px;
+}
+label{
+    font-size: 14px;
+}
+label[for="nome"], label[for="email"]{
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+}
+button{
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+form{
+    max-width: 600px;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+   
+}
+header{
+    margin-right: 500px;
+    margin-left: 500px;
+}
+h2{
+    font-size: 40px;
+}
+
+/* Estilo para campos obrigatórios */
+input[required] + label::after,
+label[for="name"]::after,
+label[for="telefone"]::after,
+label[for="email"]::after {
+    content: " *";
+    color: red;
+}
