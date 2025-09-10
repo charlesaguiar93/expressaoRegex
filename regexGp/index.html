@@ -4,38 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/regex.css">
-    <script src="js/validaproc.js"></script>
-    <title>Formulário</title>
+    <script defer src="js/validaproc.js"></script>
+    <title>Formulário Regex</title>
 </head>
-<header>
-    <h2>...</h2>
-</header>
 <body>
-    <form>
+
+    <!-- Formulário de Validação "Regex" construção-->
+    <div class="container">
+     <strong><p id="resultMessage"></p></strong> 
+        <form id="emailForm">
+         <fieldset>  
+            <legend><h1>Formulário de Validação "Regex"</h1></legend>
+            <input type="email" id="emailInput" placeholder="Digite seu email - texto@texto.texto"/>
+            <button type="submit">Enviar</button> <button type="reset">Limpar</button>
+        </form>
+        </fieldset> 
         
-            <legend>Dados Pessoais</legend><br>
-        <fieldset class="motivo">
-            <label for="name"><strong>Nome</strong></label>
-            <input type="text" id="name" name="name">
+    </div>
 
-            <label for="Sobrename"><strong>Sobrenome</strong></label>
-            <input type="Sobrename" id="Sobrename" name="Sobrename">
+    <div class="container">
+        <h1></h1>
+        <form id="nameForm">
+            <fieldset>
+                <legend>validar nome</legend>
+                <input type="text" id="nameInput" placeholder="Digite seu nome"/>
+                <button type="submit">Enviar</button> <button type="reset">Limpar</button>
+            </fieldset>
+        </form>
+       </fieldset>
+        <p id="resultMessage"></p>
+    </div>
 
-            <label for="telefone"><strong>Telefone</strong></label>
-            <input type="tel" id="telefone" name="telefone" placeholder="(99) 99999-9999">
+    <div class="container">
+        
+        <form id="dataNascimentoForm">
+            <fieldset>
+            <legend>validar data de nascimento</legend>
+            <input type="text" id="dataNascimentoInput" placeholder="Digite sua data de nascimento - dd/mm/aaaa"/>
+            <button type="submit">Enviar</button> <button type="reset">Limpar</button>
+        </form>
+        <p id="resultMessage"></p>
+    </div>
 
-            <label for="email"><strong>Email</strong></label>
-            <input type="email" id="email" name="email" placeholder="@gmail.com.br">
+     <div class="container">
+        
+        <form id="cpfForm">
+            <fieldset>
+            <legend>validar CPF</legend>
+            <input type="text" id="cpfInput" placeholder="Digite seu CPF - 000.000.000-00"/>
+            <button type="submit">Enviar</button> <button type="reset">Limpar</button>
+        </form>
+        <p id="resultMessage"></p>
+    </div>
 
-            <label for="cpf"><strong>CPF</strong></label>
-            <input type="cpf" id="cpf" name="cpf" placeholder="000.000.000-00"> <br>
+    <div class="container">
+        
+        <form id="telefoneForm">
+            <fieldset>
+            <legend>validar telefone</legend>
+            <input type="text" id="telefoneInput" placeholder="Digite seu telefone - (00) 00000-0000"/>
+            <button type="submit">Enviar</button> <button type="reset">Limpar</button>
+        </form>
+        <p id="resultMessage"></p>
+    </div>
 
-            <label for="nascimento"><strong>Data de Nascimento</strong></label>
-            <input type="nascimento" id="nascimento" name="nascimento" placeholder="00/00/0000"> <br>
-            <br><a href="indexCadastroFeito.html"><button type="submit">Enviar</button></a>  <button type="reset">limpar</button>
+    <div class="container">
+        <h1></h1>
+        <form id="cepForm">
+            <fieldset>
+            <legend>validar CEP</legend>
+            <input type="text" id="cepInput" placeholder="Digite seu CEP - 00000-000"/>
+            <button type="submit">Enviar</button> <button type="reset">Limpar</button>
+        </form>
+        <p id="resultMessage"></p>
+    </div>
+   
 
-        </fieldset>
-        <br>
-    </form>
 </body>
 </html>
