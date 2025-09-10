@@ -1,4 +1,4 @@
-// selecione os elementos do formulário
+// selecionar os elementos do formulário
 const emailInput = document.querySelector("#emailInput");
 const resultMessage = document.querySelector("#resultMessage");
 const emailForm = document.querySelector("#emailForm");
