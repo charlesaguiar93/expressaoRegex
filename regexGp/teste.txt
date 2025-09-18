@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 teste 12345
+=======
+teste 123
+>>>>>>> 1d2b37d4d1c33cf6d7e8ebf11e873da0bb50e42b
